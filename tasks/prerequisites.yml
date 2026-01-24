@@ -1,0 +1,15 @@
+---
+# Prerequisites for node-red
+- name: Ensure prerequisite packages
+  ansible.builtin.package:
+    name: "{{ prerequisites }}"
+    state: present
+
+- name: Ensure node packages
+  community.general.npm:
+    name: "{{ item }}"
+    state: present
+    global: true
+    production: true
+    unsafe_perm: true
+  loop: "{{ npm_packages }}"

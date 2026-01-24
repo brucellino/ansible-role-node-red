@@ -1,0 +1,15 @@
+---
+# defaults file for node-red
+prerequisites:
+  - build-essential
+  - git
+  - curl
+  - nodejs
+npm_packages:
+  - node-red
+  - node-red-node-pi-gpio@latest
+  - node-red-node-random@latest
+  - node-red-node-ping@latest
+  - node-red-contrib-play-audio@latest
+  - node-red-node-smooth@latest
+  - node-red-node-serialport@latest
