@@ -4,7 +4,7 @@ _.python.venv = { path = ".venv", create = true }
 [tools]
 python = "3.13"
 uv = "latest"
-node = "24"
+node = "26"
 
 [tasks]
 install_deps = "uv pip install pre-commit ansible-core detect-secrets"
